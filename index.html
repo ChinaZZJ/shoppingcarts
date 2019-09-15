@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- <meta charset="UTF-8"> -->
+	<title>商品展示</title>
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<script type="text/javascript" src="../plugins/jquery-3.4.1.min.js"></script>
+	<link rel="stylesheet" href="../css/展示.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <a href="#">首页</a>
+                <a href="#">品牌</a>
+                <a href="#">设计师</a>
+                <a href="#">联系我们</a>
+            </nav>
+        </header>
+        <section class="content">
+        	<section class="left">
+        		<div class="wrap">
+        			<div class="cart">
+        				<div class="cart-top">
+        					<span>购物车</span>
+        					<span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
+        					<button><a href="list.html" target="_blank">结账</a></button>
+        				</div>
+        				<div class="tip">
+        					<p>购物车没有物品</p>
+        				</div>
+        				<div class="products">
+        					<ul>
+        						<!-- <li>
+                                    <img src="../image/one.jpg" alt="请使用新版浏览器查看">
+                                    <div class="text">
+                                        <p class="name">针织衫</p>
+                                        <p class="price">390</p>
+                                    </div>
+                                </li> -->
+        					</ul>
+        				</div> <!-- 购物车 -->
+        		    </div>
+        		    <div class="thing"> <!--  类别 -->
+        		    	<div class="title">类别
+        		    		<div class="checks">
+                                <ul>
+                                    <li>
+                                        <div class="check">
+                                            <input type="checkbox"><span>饰品</span>
+                                        </div>
+                                   </li>
+                                   <li>
+                                        <div class="check">
+                                            <input type="checkbox"><span>鞋子</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="check">
+                                            <input type="checkbox"><span>包包</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="check">
+                                            <input type="checkbox"><span>衬衫</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="check">
+                                            <input type="checkbox"><span>外套</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="check">
+                                            <input type="checkbox"><span>毛衣</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="check">
+                                            <input type="checkbox"><span>夹克</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="check">
+                                            <input type="checkbox"><span>T恤</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="check">
+                                            <input type="checkbox"><span>珠宝</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="check">
+                                            <input type="checkbox"><span>裙子</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>	   
+        		    	</div>
+        		    </div>
+        		    <div class="color">  <!-- 颜色 -->
+        		    	<div class="title">
+        		    		颜色
+        		    	</div>
+        		    	<div class="radios">
+        		    		<ul>
+                                <li>
+                                    <div class="radio">
+                                        <div class="circle mise"></div><span>米色</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="radio">
+                                        <div class="circle gray"></div><span>灰色</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="radio">
+                                        <div class="circle black"></div><span>黑色</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="radio">
+                                        <div class="circle orange"></div><span>橙色</span>
+                                    </div>
+                                </li>    
+                                <li>
+                                    <div class="radio">
+                                        <div class="circle blue"></div><span>蓝色</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="radio">
+                                        <div class="circle purple"></div><span>紫色</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="radio">
+                                        <div class="circle brown"></div><span>棕色</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="radio">
+                                        <div class="circle red"></div><span>红色</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="radio">
+                                        <div class="circle green"></div><span>绿色</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="radio">
+                                        <div class="circle white"></div><span>白色</span>
+                                    </div>
+                                </li>
+                            </ul>
+        		    	</div>
+        		    </div>
+        		    <div class="sizezone">   <!-- 尺寸 -->
+        		    	<div class="title">
+                        尺寸
+                        </div>
+                        <div class="sizes">
+                            <ul>
+                                <li>
+                                    <div class="size">
+                                        <input type="checkbox"><span>XS</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="size">
+                                        <input type="checkbox"><span>L</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="size">
+                                        <input type="checkbox"><span>S</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="size">
+                                        <input type="checkbox"><span>XL</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="size">
+                                        <input type="checkbox"><span>M</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="size">
+                                        <input type="checkbox"><span>XXL</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+        		    </div>
+        		    <div class="price"> <!--  价格 -->
+        		    	<div class="title">
+                        价格区间
+                        </div>
+                        <div class="progress">
+                            <progress max="100" value="50"></progress>
+                        </div>
+        		    </div>
+        	    </div>
+        	</section>
+        	<section class="right">
+        		<div class="wrap">
+        			<div class="header">
+        				<div class="title"><span>首页/产品列表/女士上衣</span></div>
+        				<div class="btns">
+        					<span>查看：</span>
+        					<!-- 高亮显示为active-btn默认显示为小网格，暗淡显示为default-btn -->
+        					<span class="glyphicon glyphicon-th active-btn" aria-hidden="true"></span>
+                            <span class="glyphicon glyphicon-th-large default-btn" aria-hidden="true"></span>
+        				</div>
+        			</div>
+        			<!-- 当default-content变为large-content -->
+        			<div class="default-content changer">
+        				<ul> 
+        					<!-- 当li添加类:hoverShow展示后两栏, 当父元素:default-content 变为:large-content 展示最后一栏 -->
+        					<li>
+        						<div class="picture">
+        							<div class="picture-show"></div>
+        							<div class="btns">
+        								<!-- 鼠标放入显示 -->
+        								<button class="add-cart">加入购物车</button>
+        								<button>查看详情</button>
+        							</div>
+        							<img src="../image/one.jpg" alt="图标不存在或者已删除">
+        						</div>
+        						<div class="information">
+        							<div class="thing-name">
+        								<h5>
+        									<span>￥</span>
+        									<span>针织衫</span>
+        								</h5>
+        								<p>夏天衣服</p>
+        							</div>
+        							<div class="thing-price">
+        								<h3>390</h3>
+        							</div>	
+        						</div>
+        					  <!-- 以下默认隐藏 -->
+        						<div class="thing-size">
+        							<h4>尺寸</h4>
+        							<p>XS,S,M,L,XL,XXL</p>
+        						</div>
+        						<div class="thing-color">
+        							<h4>颜色</h4>
+        							<ul class="colors">
+        								<li class="circle red"></li>
+        								<li class="circle"></li>
+        								<li class="circle blue"></li>
+        								<li class="circle "></li>
+        							</ul>
+        						</div>
+        						<!-- 以下为大布局显示 -->
+        						<div class="thing-show-large">
+        							<h3>针织衫</h3>
+        							<p class="thing-number">
+        								<span>产品编号：</span>
+        								<span class="number">78152</span>
+        							</p>
+        							<p class="thing-price-large">
+        								<span>&yen;430</span>
+        								<span>&yen;390</span>
+        							</p>
+        							<div class="thing-color-large">
+        							    <h5>颜色</h5>
+        							    <ul>
+        								    <li class="circle red"></li>
+        								    <li class="circle"></li>
+        								    <li class="circle blue"></li>
+        								    <li class="circle "></li>
+        							    </ul>
+        						    </div>
+        						    <div class="thing-size-large">
+        							    <h5>尺寸</h5>
+        							    <p>XS,S,M,L,XL,XXL</p>
+        						    </div>
+        						    <button class="add-cart">加入购物车</button>
+        						</div>
+        					</li>
+        					<li>
+        						<div class="picture">
+        							<div class="picture-show"></div>
+        							<div class="btns">
+        								<button class="add-cart">加入购物车</button>
+        								<button>查看详情</button>
+        							</div>
+        							<img src="../image/two.jpg">
+        						</div>
+        						<div class="information">
+        							<div class="thing-name">
+        								<h5>
+        									<span>￥</span>
+        									<span>毛绒衫</span>
+        								</h5>
+        								<p>夏天衣服</p>
+        							</div>
+        							<div class="thing-price">
+        								<h3>200</h3>
+        							</div>	
+        						</div>
+        					  <!-- 以下默认隐藏 -->
+        						<div class="thing-size">
+        							<h4>尺寸</h4>
+        							<p>XS,S,M,L,XL,XXL</p>
+        						</div>
+        						<div class="thing-color">
+        							<h4>颜色</h4>
+        							<ul class="colors">
+        								<li class="circle green"></li>
+        								<li class="circle"></li>
+        								<li class="circle"></li>
+        								<li class="circle black"></li>
+        							</ul>
+        						</div>
+        						<div class="thing-show-large">
+        							<h3>毛绒衫</h3>
+        							<p class="thing-number">
+        								<span>产品编号：</span>
+        								<span class="number">78145452</span>
+        							</p>
+        							<p class="thing-price-large">
+        								<span>&yen;430</span>
+        								<span>&yen;200</span>
+        							</p>
+        							<div class="thing-color-large">
+        							    <h5>颜色</h5>
+        							    <ul>
+        								    <li class="circle green"></li>
+        								    <li class="circle"></li>
+        								    <li class="circle"></li>
+        								    <li class="circle black"></li>
+        							    </ul>
+        						    </div>
+        						    <div class="thing-size-large">
+        							    <h5>尺寸</h5>
+        							    <p>XS,S,M,L,XL,XXL</p>
+        						    </div>
+        						    <button class="add-cart">加入购物车</button>
+        						</div>
+        					</li>
+        					<li>
+        						<div class="picture">
+        							<div class="picture-show"></div>
+        							<div class="btns">
+        								<button class="add-cart">加入购物车</button>
+        								<button>查看详情</button>
+        							</div>
+        							<img src="../image/three.jpg">
+        						</div>
+        						<div class="information">
+        							<div class="thing-name">
+        								<h5>
+        									<span>￥</span>
+        									<span>衬衫群</span>
+        								</h5>
+        								<p>冬天衣服</p>
+        							</div>
+        							<div class="thing-price">
+        								<h3>139</h3>
+        							</div>	
+        						</div>
+        					  <!-- 以下默认隐藏 -->
+        						<div class="thing-size">
+        							<h4>尺寸</h4>
+        							<p>XS,S,M,L,XL,XXL</p>
+        						</div>
+        						<div class="thing-color">
+        							<h4>颜色</h4>
+        							<ul class="colors">
+        								<li class="circle brown"></li>
+        								<li class="circle mise"></li>
+        								<li class="circle"></li>
+        								<li class="circle"></li>
+        							</ul>
+        						</div>
+        						<div class="thing-show-large">
+        							<h3>衬衫群</h3>
+        							<p class="thing-number">
+        								<span>产品编号：</span>
+        								<span class="number">755522</span>
+        							</p>
+        							<p class="thing-price-large">
+        								<span>&yen;230</span>
+        								<span>&yen;139</span>
+        							</p>
+        							<div class="thing-color-large">
+        							    <h5>颜色</h5>
+        							    <ul>
+        								    <li class="circle brown"></li>
+        								    <li class="circle mise"></li>
+        								    <li class="circle"></li>
+        								    <li class="circle"></li>
+        							    </ul>
+        						    </div>
+        						    <div class="thing-size-large">
+        							    <h5>尺寸</h5>
+        							    <p>XS,S,M,L,XL,XXL</p>
+        						    </div>
+        						    <button class="add-cart">加入购物车</button>
+        						</div>
+        					</li>
+        					<li>
+        						<div class="picture">
+        							<div class="picture-show"></div>
+        							<div class="btns">
+        								<button class="add-cart">加入购物车</button>
+        								<button>查看详情</button>
+        							</div>
+        							<img src="../image/four.jpg">
+        						</div>
+        						<div class="information">
+        							<div class="thing-name">
+        								<h5>
+        									<span>￥</span>
+        									<span>高领套衫</span>
+        								</h5>
+        								<p>夏天衣服</p>
+        							</div>
+        							<div class="thing-price">
+        								<h3>399</h3>
+        							</div>	
+        						</div>
+        					  <!-- 以下默认隐藏 -->
+        						<div class="thing-size">
+        							<h4>尺寸</h4>
+        							<p>XS,S,M,L,XL,XXL</p>
+        						</div>
+        						<div class="thing-color">
+        							<h4>颜色</h4>
+        							<ul class="colors">
+        								<li class="circle"></li>
+        								<li class="circle red"></li>
+        								<li class="circle blue"></li>
+        								<li class="circle purple"></li>
+        							</ul>
+        						</div>
+        						<div class="thing-show-large">
+        							<h3>高领套衫</h3>
+        							<p class="thing-number">
+        								<span>产品编号：</span>
+        								<span class="number">15772</span>
+        							</p>
+        							<p class="thing-price-large">
+        								<span>&yen;455</span>
+        								<span>&yen;399</span>
+        							</p>
+        							<div class="thing-color-large">
+        							    <h5>颜色</h5>
+        							    <ul>
+        								    <li class="circle"></li>
+        								    <li class="circle red"></li>
+        								    <li class="circle blue"></li>
+        								    <li class="circle purple"></li>
+        							    </ul>
+        						    </div>
+        						    <div class="thing-size-large">
+        							    <h5>尺寸</h5>
+        							    <p>XS,S,M,L,XL,XXL</p>
+        						    </div>
+        						    <button class="add-cart">加入购物车</button>
+        						</div>
+        					</li>
+        					<li>
+        						<div class="picture">
+        							<div class="picture-show"></div>
+        							<div class="btns">
+        								<button class="add-cart">加入购物车</button>
+        								<button>查看详情</button>
+        							</div>
+        							<img src="../image/five.jpg">
+        						</div>
+        						<div class="information">
+        							<div class="thing-name">
+        								<h5>
+        									<span>￥</span>
+        									<span>中性衫</span>
+        								</h5>
+        								<p>夏天衣服</p>
+        							</div>
+        							<div class="thing-price">
+        								<h3>500</h3>
+        							</div>	
+        						</div>
+        					  <!-- 以下默认隐藏 -->
+        						<div class="thing-size">
+        							<h4>尺寸</h4>
+        							<p>XS,S,M,L,XL,XXL</p>
+        						</div>
+        						<div class="thing-color">
+        							<h4>颜色</h4>
+        							<ul class="colors">
+        								<li class="circle red"></li>
+        								<li class="circle black"></li>
+        								<li class="circle blue"></li>
+        								<li class="circle "></li>
+        							</ul>
+        						</div>
+        						<div class="thing-show-large">
+        							<h3>中性衫</h3>
+        							<p class="thing-number">
+        								<span>产品编号：</span>
+        								<span class="number">78544152</span>
+        							</p>
+        							<p class="thing-price-large">
+        								<span>&yen;430</span>
+        								<span>&yen;500</span>
+        							</p>
+        							<div class="thing-color-large">
+        							    <h5>颜色</h5>
+        							    <ul>
+        								    <li class="circle red"></li>
+        								    <li class="circle black"></li>
+        								    <li class="circle blue"></li>
+        								    <li class="circle "></li>
+        							    </ul>
+        						    </div>
+        						    <div class="thing-size-large">
+        							    <h5>尺寸</h5>
+        							    <p>XS,S,M,L,XL,XXL</p>
+        						    </div>
+        						    <button class="add-cart">加入购物车</button>
+        						</div>
+        					</li>
+        					<li>
+        						<div class="picture">
+        							<div class="picture-show"></div>
+        							<div class="btns">
+        								<button class="add-cart">加入购物车</button>
+        								<button>查看详情</button>
+        							</div>
+        							<img src="../image/six.jpg">
+        						</div>
+        						<div class="information">
+        							<div class="thing-name">
+        								<h5>
+        									<span>￥</span>
+        									<span>套头针织衫</span>
+        								</h5>
+        								<p>夏天衣服</p>
+        							</div>
+        							<div class="thing-price">
+        								<h3>700</h3>
+        							</div>	
+        						</div>
+        					  <!-- 以下默认隐藏 -->
+        						<div class="thing-size">
+        							<h4>尺寸</h4>
+        							<p>XS,S,M,L,XL,XXL</p>
+        						</div>
+        						<div class="thing-color">
+        							<h4>颜色</h4>
+        							<ul class="colors">
+        								<li class="circle purple"></li>
+        								<li class="circle gray"></li>
+        								<li class="circle blue"></li>
+        								<li class="circle mise"></li>
+        							</ul>
+        						</div>
+        						<div class="thing-show-large">
+        							<h3>套头针织衫</h3>
+        							<p class="thing-number">
+        								<span>产品编号：</span>
+        								<span class="number">998152</span>
+        							</p>
+        							<p class="thing-price-large">
+        								<span>&yen;1430</span>
+        								<span>&yen;700</span>
+        							</p>
+        							<div class="thing-color-large">
+        							    <h5>颜色</h5>
+        							    <ul>
+        								    <li class="circle purple"></li>
+        								    <li class="circle gray"></li>
+        								    <li class="circle blue"></li>
+        								    <li class="circle mise"></li>
+        							    </ul>
+        						    </div>
+        						    <div class="thing-size-large">
+        							    <h5>尺寸</h5>
+        							    <p>XS,S,M,L,XL,XXL</p>
+        						    </div>
+        						    <button class="add-cart">加入购物车</button>
+        						</div>
+        					</li>
+        				</ul>
+        			</div>	
+        		</div>	
+        	</section>      	
+        </section>
+    </div>
+    <script src="../js/展示.js"></script>
+</body>
+</html>
